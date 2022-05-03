@@ -16,5 +16,7 @@ docker compose up
     The `setup-rs` container is then stopped.
 4. `adminmongo` container is created. This is used to provide a web interface to the mongodb replica set.
 
+Running the command `docker exec [container-name] bash -c 'mongo --eval "rs.status\(\);"'` will show the replica set status.
+
 ## References
 - [Creating a Mongo replicaset using docker: Mongo replicaset + Nodejs + Docker Compose](https://www.youtube.com/watch?v=mlw7vWISaF4)
